@@ -6,7 +6,8 @@ on:
     branches:
       - release        # 匹配主发布分支
       - test-*         # 匹配所有 test- 开头的分支（通配符）
-
+on:
+  workflow_dispatch:
 jobs:
   # 公共步骤（所有分支都需要执行的前置操作）
   common-steps:
